@@ -1,6 +1,6 @@
 include(FetchContent)
 
-set(LIBUV_MINVERSION 1.46.0)
+set(LIBUV_MINVERSION 1.51.0)
 set(BOOST_MINVERSION 1.81)
 set(NGHTTP2_MINVERSION 1.64.0)
 set(PROTOBUF_MINVERSION 3.15.0 CACHE STRING "Protobuf version")
@@ -12,7 +12,7 @@ if(NOT GRPCXX_USE_ASIO)
         # libuv
         FetchContent_Declare(libuv
             URL      https://github.com/libuv/libuv/archive/refs/tags/v${LIBUV_MINVERSION}.tar.gz
-            URL_HASH SHA256=7aa66be3413ae10605e1f5c9ae934504ffe317ef68ea16fdaa83e23905c681bd
+            URL_HASH SHA256=27e55cf7083913bfb6826ca78cde9de7647cded648d35f24163f2d31bb9f51cd
         )
 
         set(LIBUV_BUILD_SHARED ${BUILD_SHARED_LIBS} CACHE BOOL "Build libuv shared lib")
