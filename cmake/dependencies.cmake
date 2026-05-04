@@ -4,7 +4,7 @@ set(LIBUV_MINVERSION 1.51.0)
 set(BOOST_MINVERSION 1.81)
 set(NGHTTP2_MINVERSION 1.64.0)
 set(PROTOBUF_MINVERSION 3.15.0 CACHE STRING "Protobuf version")
-set(FMT_MINVERSION 10.1.1)
+set(FMT_MINVERSION 11.1.4)
 set(GTEST_MINVERSION 1.15.2)
 
 if(NOT GRPCXX_USE_ASIO)
@@ -134,7 +134,7 @@ else()
     # fmt
     FetchContent_Declare(fmt
         URL      https://github.com/fmtlib/fmt/archive/refs/tags/${FMT_MINVERSION}.tar.gz
-        URL_HASH SHA256=78b8c0a72b1c35e4443a7e308df52498252d1cefc2b08c9a97bc9ee6cfe61f8b
+        URL_HASH SHA256=ac366b7b4c2e9f0dde63a59b3feb5ee59b67974b14ee5dc9ea8ad78aa2c1ee1e
     )
     FetchContent_MakeAvailable(fmt)
 endif()
