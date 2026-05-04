@@ -159,7 +159,7 @@ jobs:
             -DGRPCXX_BUILD_EXPERIMENTS=OFF `
             -DGRPCXX_BUILD_TESTING=OFF `
             -DProtobuf_ROOT=C:\vcpkg\packages\protobuf_x64-windows `
-            -DCMAKE_CXX_FLAGS="-DNGHTTP2_NO_SSIZE_T -IC:\vcpkg\packages\abseil_x64-windows\include" `
+            -DCMAKE_CXX_FLAGS="-DNGHTTP2_NO_SSIZE_T -IC:\vcpkg\packages\abseil_x64-windows\include -IC:\vcpkg\packages\utf8-range_x64-windows\include" `
             ${{ matrix.cmake_args }}
       - name: Build
         run: cmake --build .build --config Release
