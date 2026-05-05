@@ -1,5 +1,14 @@
 # Changelog
 
+## v0.7.0 - 5th May, 2026
+
+### What's changed
+
+* CMake >= 4.0 support by @uatuko in https://github.com/uatuko/grpcxx/pull/61
+
+**Full Changelog**: https://github.com/uatuko/grpcxx/compare/v0.6.3...v0.7.0
+
+
 ## v0.6.3 - 16th December, 2025
 
 ### What's Changed
